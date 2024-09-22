@@ -12,4 +12,5 @@ dependencies = [
 dev-dependencies = [
     "grpcio-testing>=1.66.1",
     "grpcio-tools>=1.66.1",
+    "python-dotenv>=1.0.1",
 ]
