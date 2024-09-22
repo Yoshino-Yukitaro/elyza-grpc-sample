@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "dev.yukky-sandbox.yukky-sandbox-guide-server.guide";
+option java_outer_classname = "GuideProto";
+option objc_class_prefix = "GID";
+
+package guide;
+
+service Guide {
+  rpc ThinkResponseMsg (UserMsg) returns (GuideMsg) {}
+}
+
+message UserMsg {
+  string msg = 1;
+}
+
+message GuideMsg {
+  string msg = 1;
+}
+
