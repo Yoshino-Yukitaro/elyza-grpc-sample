@@ -9,6 +9,7 @@ package guide;
 
 // ゆっきーの砂場の案内をするAI機能の定義
 service Guide {
+  // ユーザーからのメッセージを受けてレスポンス内容を考える
   rpc ThinkResponseMsg (UserMsg) returns (GuideMsg) {}
 }
 
