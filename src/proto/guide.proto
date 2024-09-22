@@ -7,14 +7,17 @@ option objc_class_prefix = "GID";
 
 package guide;
 
+// ゆっきーの砂場の案内をするAI機能の定義
 service Guide {
   rpc ThinkResponseMsg (UserMsg) returns (GuideMsg) {}
 }
 
+// ユーザーからのメッセージ
 message UserMsg {
   string msg = 1;
 }
 
+// AIのメッセージ
 message GuideMsg {
   string msg = 1;
 }
